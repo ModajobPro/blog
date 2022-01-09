@@ -235,7 +235,7 @@ input {
 #submitad_btn {
     border-color: rgba(0, 0, 0, 0.0);
     width: 179px;
-    background: #FE6F61;
+    background: #8031c2;
     border-radius: 15px;
     font-style: normal;
     font-weight: 500;
@@ -354,6 +354,7 @@ input {
 }
 
 .top_ads {
+    margin-top: 2%;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -378,12 +379,13 @@ input {
     margin-left: 26px;
 }
 
-.moda-main {
+.moda-main div.col-9 {
     display: flex;
     flex-direction: row;
-    margin-right: 119px;
-    margin-top: 23px;
-}
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;}
 
 .rightside-container {
     width: 386px;
@@ -395,19 +397,12 @@ input {
 }
 
 .moda-post {
-    width: 400px;
-    margin: 20px 8px;
-    background: #FFFFFF;
+        margin: 20px 8px;
     border: 1px solid #EBEFF0;
-    box-sizing: border-box;
-    border-radius: 12px;
-    float: left;
 }
 
 .moda-fea-post {
-    width: 300px;
-    background: #FFFFFF;
-    float: left;
+
 }
 
 .post {
@@ -499,9 +494,7 @@ input {
 .footer {
     display: flex;
     flex-direction: row;
-    background: #d0cfcf;
-    padding: 15px;
-    position: relative;
+    background: #ededed;
 }
 
 .footer-r {
@@ -554,9 +547,12 @@ input {
 }
 
 .footer-namad {
-    text-align: center;
-    padding: 30px;
-}
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+    align-items: center;
+    justify-content: space-evenly;}
 
 .footer-namad img {
     margin: 30px 15px 15px;
@@ -779,9 +775,10 @@ input {
 .featured-left {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+}
+.featured-left img{
+    border-radius: 5%;
 }
 
 .overlay-text {
@@ -790,19 +787,23 @@ input {
     background: azure;
     background: linear-gradient(0deg, black, transparent);
     width: 332px;
-    height: 15%;
+    height: 10%;
     border-radius: 16px;
+    font-size: x-large;
+    text-align: center;
 }
 
 
 .overlay-text-big {
     position: absolute;
-    transform: translate(-219px, -80px);
+    transform: translate(0rem, -5rem);
     background: azure;
-    background: linear-gradient(0deg, black, transparent);
-    width: 700px;
-    height: 15%;
-    border-radius: 16px;
+    background: linear-gradient(359deg, black, transparent);
+    width: 44rem;
+    height: 10%;
+    border-radius: 25px;
+    font-size: xxx-large;
+    text-align: center;
 }
 
 .overlay-text p,
@@ -881,4 +882,49 @@ input {
     justify-content: center;
     align-content: flex-start;
     flex-wrap: nowrap;
+}
+
+.newsletter {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    width: 60%;
+    padding: 2%;
+    background: #FFFFFF;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.newsletter div.col-8 input{
+    width: 70%;
+    padding: 3%;
+    border-radius: 0 10px 10px 0;
+    border: 1px solid #ebebeb;
+}
+.newsletter div.col-8 button{
+    width: 20%;
+    padding: 3%;
+    border-radius: 10px 0 0 10px;
+    border-right-width: 1px;
+    background: #ffd10f;
+}
+
+.horizantal_center {
+    display: flex;
+    justify-content: space-around;
+    transform: translateY(40px);
+    z-index: 100;
+}
+
+.credit {
+    background: #ededed;
+    display: flex;
+    align-items: center;
+}
+
+.namad {
+    flex-wrap: nowrap !important;
+    max-width: 20%;
+    justify-content: center;
 }
