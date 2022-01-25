@@ -385,7 +385,8 @@ input {
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-around;
-    align-items: center;}
+    align-items: center;
+}
 
 .rightside-container {
     width: 386px;
@@ -397,8 +398,9 @@ input {
 }
 
 .moda-post {
-        margin: 20px 8px;
+    margin: 20px 8px;
     border: 1px solid #EBEFF0;
+    background-color: #FFFFFF;
 }
 
 .moda-fea-post {
@@ -552,7 +554,8 @@ input {
     flex-wrap: wrap;
     align-content: stretch;
     align-items: center;
-    justify-content: space-evenly;}
+    justify-content: space-evenly;
+}
 
 .footer-namad img {
     margin: 30px 15px 15px;
@@ -646,7 +649,6 @@ input {
     box-sizing: border-box;
     border-radius: 12px;
     margin-bottom: 10px;
-    margin-top: 20px;
 }
 
 .rs-general hr {
@@ -777,7 +779,8 @@ input {
     flex-direction: row;
     justify-content: center;
 }
-.featured-left img{
+
+.featured-left img {
     border-radius: 5%;
 }
 
@@ -869,6 +872,8 @@ input {
 
 .social {
     text-align: center;
+    padding: 20px;
+
 }
 
 .ad {
@@ -896,13 +901,14 @@ input {
     border-radius: 20px;
 }
 
-.newsletter div.col-8 input{
+.newsletter div.col-8 input {
     width: 70%;
     padding: 3%;
     border-radius: 0 10px 10px 0;
     border: 1px solid #ebebeb;
 }
-.newsletter div.col-8 button{
+
+.newsletter div.col-8 button {
     width: 20%;
     padding: 3%;
     border-radius: 10px 0 0 10px;
@@ -927,4 +933,175 @@ input {
     flex-wrap: nowrap !important;
     max-width: 20%;
     justify-content: center;
+}
+
+.blog_image img {
+    border-radius: 30px;
+    width: 100%;
+    padding-top: 15px;
+}
+
+.overlay-text-blog {
+    position: absolute;
+    transform: translate(0%, -100%);
+    background: azure;
+    background: linear-gradient(359deg, black, transparent);
+    width: 65%;
+    height: 25%;
+    border-radius: 25px;
+    font-size: xxx-large;
+    text-align: center;
+}
+
+.author_info {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.author_info .author_tag {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.author_info div {
+    display: flex;
+    padding: 20px;
+}
+
+.author_info div img {
+    margin-left: 30px;
+    border-radius: 100%;
+}
+
+.author_info div .author_name {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+.author_info div .date {
+    margin-top: 10px;
+}
+
+.blog-single {
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 15px 0px #00000014;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-single .text {
+    padding: 4%;
+    line-height: 40px;
+}
+
+.text_special {
+    background-color: #F8F1F8;
+    display: flex !important;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_special img {
+    padding-bottom: 15%;
+}
+
+.moda-main {
+    padding-top: 30px;
+    background-color: #FAFAFA;
+}
+
+.blog_info {
+    margin-top: 30px !important;
+    box-shadow: 0px 0px 15px 0px #00000014;
+    margin-bottom: 30px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+}
+
+.comments {
+    box-shadow: 0px 0px 15px 0px #00000014;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+.blog_info .meta{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.blog_info .social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.blog_info .social div>img{
+    padding: 5px;
+}
+.comments div.col-5 > input{
+    background: #FAFDFF;
+    border: 1px solid #CAD2DD;
+    box-sizing: border-box;
+    border-radius: 25px;
+    width: 100%;
+    height: 80px;
+}
+.comments div.d-flex +div.d-flex input{
+    background: #FAFDFF;
+    border: 1px solid #CAD2DD;
+    box-sizing: border-box;
+    border-radius: 25px;
+    width: 80%;
+    height: 80px;
+}
+.comments button.btn-success{
+    width: 30%;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #0CB3B9;
+    color: #FFFFFF;
+}
+.shortlinks{
+    display: flex;
+}
+.shortlinks input {
+    width: 100%;
+    padding: 3%;
+    border-radius: 0 10px 10px 0;
+    border: 1px solid #ebebeb;
+    background: #F5F5F5;
+    color: black;
+    text-align: left;
+}
+
+.shortlinks button {
+    width: 35%;
+    border-radius: 10px 0 0 10px;
+    border-right-width: 1px;
+    background: #C87BC3;
+    color: #FFFFFF;
+}
+
+.recent_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3%;
+
+}
+
+.recent_posts {
+    display: flex;
+    justify-content: center;
+}
+.recent_posts > div.moda-post{
+    padding-bottom: 3%;
+}
+
+.recent {
+    background-color: #ECEDF2;
 }
